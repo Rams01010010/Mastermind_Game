@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.278125" />
+        <entry key="app/src/main/res/drawable/round_btn.xml" value="0.278125" />
+        <entry key="app/src/main/res/drawable/round_dialog.xml" value="0.278125" />
+        <entry key="app/src/main/res/layout/activity_game.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_how_to_play.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_contact.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_contact_dialog.xml" value="0.39296875" />
+        <entry key="app/src/main/res/layout/layout_howto_dialog.xml" value="0.39296875" />
+        <entry key="app/src/main/res/layout/layout_row.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/layout_settings.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_settings_dialog.xml" value="0.39296875" />
+        <entry key="app/src/main/res/layout/layout_winner_dialog.xml" value="0.39296875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
