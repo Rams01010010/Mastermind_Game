@@ -266,23 +266,28 @@ public class GameActivity extends AppCompatActivity {
                 }
             });
             dialog.show(getSupportFragmentManager(),"WinnerDialog");
+            codeBreaked = true;
         }
         updateCheckBtnStatus();
     }
 
     private void updateCheckBtnStatus()
     {
-        checkBtn.setEnabled(true);
-        if(!GlobalVariables.allowEmptyPegs) {
-            int flag = 0;
-            for (int i = 0; i < 4; i++) {
-                if (roundList.get(roundList.size() - 1).getColorCode()[i] != 0) {
-                    flag += 1;
+        if(!codeBreaked) {
+            checkBtn.setEnabled(true);
+            if (!GlobalVariables.allowEmptyPegs) {
+                int flag = 0;
+                for (int i = 0; i < 4; i++) {
+                    if (roundList.get(roundList.size() - 1).getColorCode()[i] != 0) {
+                        flag += 1;
+                    }
+                }
+                if (flag != 4) {
+                    checkBtn.setEnabled(false);
                 }
             }
-            if (flag != 4) {
-                checkBtn.setEnabled(false);
-            }
         }
+        else
+            checkBtn.setEnabled(false);
     }
 }
