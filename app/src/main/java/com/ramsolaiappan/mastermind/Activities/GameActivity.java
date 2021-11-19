@@ -55,7 +55,7 @@ public class GameActivity extends AppCompatActivity {
         //Fullscreen Mode
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        //Initialize Propertirs
+        //Initialize Properties
         init();
 
         //Create ColorCode
@@ -246,6 +246,10 @@ public class GameActivity extends AppCompatActivity {
             }
         }
         else {
+
+            hiddenCodeLayout.setVisibility(View.VISIBLE);
+            findTV.setVisibility(View.INVISIBLE);
+
             WinnerDialog dialog = new WinnerDialog();
             Bundle bundle = new Bundle();
             bundle.putBoolean("gameState",codeBreaked);
@@ -258,7 +262,7 @@ public class GameActivity extends AppCompatActivity {
                         GameActivity.this.recreate();
                     }
                     else
-                        finish();
+                        dialog.dismiss();
                 }
             });
             dialog.show(getSupportFragmentManager(),"WinnerDialog");
